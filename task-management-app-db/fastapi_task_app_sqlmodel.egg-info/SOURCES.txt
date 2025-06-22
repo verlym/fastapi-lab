@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+fastapi_task_app_sqlmodel.egg-info/PKG-INFO
+fastapi_task_app_sqlmodel.egg-info/SOURCES.txt
+fastapi_task_app_sqlmodel.egg-info/dependency_links.txt
+fastapi_task_app_sqlmodel.egg-info/requires.txt
+fastapi_task_app_sqlmodel.egg-info/top_level.txt
+routers/__init__.py
+routers/tasks.py

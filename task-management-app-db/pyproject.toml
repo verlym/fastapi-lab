@@ -1,0 +1,36 @@
+[project]
+name = "fastapi_task_app_sqlmodel"
+version = "0.1.0"
+description = "A simple Task Management App with FastAPI and SQLModel."
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "sqlmodel",       # Library ORM kita
+    "aiosqlite",      # Async driver untuk SQLite
+]
+
+[tool.uv]
+dev-dependencies = [
+    "ruff",
+    "mypy",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 99
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "C", "N", "D", "ANN", "ERA", "RUF"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.mypy]
+exclude = ["venv"]

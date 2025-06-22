@@ -1,0 +1,40 @@
+[project]
+name = "fastapi-lab"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic", # Pastikan pydantic ada di sini
+]
+
+[tool.uv]
+
+[tool.uv.workspace]
+members = [
+    "task-management-db",
+    "task-management-app-db",
+]
+# Optional: You can specify Python version here, e.g., python = "python3.10"
+
+[tool.ruff]
+select = ["E", "F", "W", "I", "N", "D"]
+ignore = [
+    "D100", "D104", "D107", "D203", "D213", # Ignore docstring rules for brevity in simple demos
+]
+line-length = 120
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+
+[tool.mypy]
+strict = true
+exclude = [
+    "venv/",
+    ".venv/",
+    "tests/",
+]
