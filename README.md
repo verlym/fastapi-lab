@@ -1,5 +1,3 @@
----
-
 # 🧪 FastAPI Lab
 
 This repository contains hands-on exercises and examples from **Parts 5 to 7** of FastAPI course. These sections focus on building more robust APIs using key FastAPI features like:
@@ -9,8 +7,10 @@ This repository contains hands-on exercises and examples from **Parts 5 to 7** o
 - Dependency injection
 - Database integration with SQLite
 - etc
-- 
+
 ## 📁 Project Structure
+
+The project is divided into multiple directories, each focusing on a specific topic:
 
 ```
 .
@@ -25,16 +25,12 @@ This repository contains hands-on exercises and examples from **Parts 5 to 7** o
 └── README.md                   # This file
 ```
 
----
-
 ## 🛠️ Tools Used
 
 - **[FastAPI](https://fastapi.tiangolo.com/)** – High-performance web framework for building APIs.
 - **[uv](https://github.com/astral-sh/uv)** – Fast Python package manager and virtual environment tool.
 - **[Pydantic](https://docs.pydantic.dev/latest/)** – Data validation and settings management.
 - **SQLite** (`tasks.db`) – Lightweight database used in task management examples.
-
----
 
 ## 🚀 Getting Started
 
@@ -96,5 +92,4 @@ mypy .
 | `task-management-app-db` | Full CRUD application with database integration. |
 | `task_management` | Reusable models or core logic for task management. |
 | `tasks.db` | SQLite database used by task management apps. |
-
----
+```
